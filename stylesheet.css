@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'rockwellbold';
+    src: url('rockb-webfont.woff2') format('woff2'), url('rockb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'rockwellbold', Arial, Helvetica, sans-serif!important;
+}

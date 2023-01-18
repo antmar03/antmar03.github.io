@@ -1,0 +1,337 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#about h1 {
+    font-size: 60pt;
+    font-weight: bolder;
+}
+
+#about h4 {
+    font-size: 24pt;
+}
+
+#about {}
+
+#work article {
+    font-size: 20pt;
+    padding: 33px;
+}
+
+.bg-dark-blue {
+    background-color: #044343;
+}
+
+.text-whiteish {
+    color: #E4E4E4;
+}
+
+label {
+    font-size: larger;
+}
+
+input,
+textarea {
+    border: hidden!important;
+    color: #E4E4E4!important;
+    margin-bottom: 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none!important;
+    background-color: #044343!important;
+}
+
+#work .img-fluid {
+    max-width: 100%;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.pt-lg-7 {
+    padding-top: 175px;
+}
+
+.bg-lighter-blue {
+    background-color: #045757;
+}
+
+.bg-dark {
+    background-color: #222222!important;
+}
+
+.text-color-white {
+    color: #E4E4E4;
+}
+
+.p-lg-6 {
+    padding: 150px;
+}
+
+.navbar {
+    background-color: none;
+    padding: 15px;
+}
+
+.navbar .ml-6 {
+    margin-left: 61%;
+}
+
+.navbar-nav li a,
+a {
+    color: #E4E4E4;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+#contact {
+    margin-bottom: 100px;
+}
+
+.box-display article {
+    background-color: #045757;
+    font-size: 17pt;
+}
+
+.box-display h3 {
+    font-size: 23pt;
+    vertical-align: middle;
+    background-color: #044343;
+}
+
+.box-display i {
+    font-size: 30pt;
+    vertical-align: bottom;
+}
+
+.navbar-brand {
+    margin-left: 30px;
+}
+
+.nav-item {
+    margin-left: 10px;
+    width: 150px;
+    font-size: larger;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.nav-item a {
+    padding: 6px;
+}
+
+.active {
+    background-color: #045757;
+}
+
+#about article {
+    font-size: 27pt;
+}
+
+#about img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+#work h4 {
+    font-size: 20pt;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body {
+    background-color: #222222;
+    color: #E4E4E4;
+    overflow-x: hidden;
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    #about h1 {
+        font-size: 35pt;
+        font-weight: bolder;
+    }
+    #about h4 {
+        font-size: 17pt;
+    }
+    #about img {
+        height: 100vh;
+    }
+    #about article {
+        font-size: 20pt;
+    }
+    #work h4 {
+        font-size: 12pt;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    #work article {
+        font-size: 13pt;
+        padding: 15px;
+    }
+    .nav-item {
+        margin-left: 25px;
+        width: 100px;
+        font-size: small;
+        text-align: center;
+        border-radius: 8px;
+    }
+    .navbar .ml-6 {
+        margin-left: 10%;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #about h1 {
+        font-size: 35pt;
+        font-weight: bolder;
+    }
+    #about h4 {
+        font-size: 17pt;
+    }
+    #about img {
+        height: 100vh;
+    }
+    #work article {
+        font-size: 13pt;
+        padding: 15px;
+    }
+    .box-display {
+        margin-bottom: 50px;
+    }
+    #strengths h1 {
+        margin-bottom: 50px;
+    }
+    #work article {
+        font-size: 13pt;
+        padding: 15px;
+    }
+    #work h4 {
+        font-size: 15pt;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .seperate {
+        margin-bottom: 170px!important;
+    }
+    #skills .col-md-4 {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    #about h1 {
+        font-size: 27pt;
+        font-weight: bolder;
+    }
+    #about h4 {
+        font-size: 17pt;
+    }
+    #work article {
+        font-size: 13pt;
+        padding: 15px;
+    }
+    #work h4 {
+        font-size: large;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .p-mobil-sm {
+        padding: 33px!important;
+    }
+    .seperate {
+        margin-bottom: 70px;
+    }
+    .container-fluid {
+        padding: 35px;
+        padding-top: 0px;
+    }
+    #work .img-fluid {
+        max-width: 100%;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .navbar .ml-6 {
+        margin: auto;
+        justify-content: center;
+    }
+    .box-display {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .box-display article {
+        font-size: 12pt;
+    }
+    .box-display h3 {
+        font-size: 15pt;
+    }
+    .box-display i {
+        font-size: 20pt;
+    }
+    .nav-item {
+        margin: auto;
+        margin-top: 25px;
+    }
+    .active {
+        background-color: none!important;
+    }
+    #about article {
+        font-size: 20pt;
+    }
+    #about img {
+        height: 60vh;
+    }
+    .mobil-font h2 {
+        font-size: larger;
+        padding: 10px;
+    }
+    .mobil-font h4 {
+        font-size: large;
+        padding: 25px;
+    }
+}
