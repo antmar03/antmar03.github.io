@@ -1,4 +1,5 @@
 var isOpen = false;
+var index = 0;
 
 const isMobile = {
     Android: function() {
@@ -43,5 +44,23 @@ $(document).ready(function() {
         $(this).parent().addClass('active');
     });
 
+    //get all the divs with the id of project with jquery
+    $('.project').hide();
+    $('.project').eq(index).show()
 
 });
+
+function setIndex(n) {
+    index += n;
+    if (index < 0) {
+        index = $('.project').length - 1;
+    }else if(index + 1 > $('.project').length){
+        index = 0;
+    }
+}
+
+function plusSlides(n) {
+    setIndex(n)
+    $('.project').hide();
+    $('.project').eq(index).show();
+}

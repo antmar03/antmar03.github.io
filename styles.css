@@ -11,6 +11,20 @@ body {
     font-size: 24pt;
 }
 
+.prev, .next {
+    font-size: 30pt;
+}
+
+.next {
+    float: right;
+}
+
+.contact-row {
+    flex-direction: row;
+
+}
+
+
 #about {}
 
 #work article {
@@ -150,6 +164,17 @@ body {
 }
 
 
+.contact-row .btn-primary {
+    width: 63px!important;
+    height: 54px!important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 12pt;
+}
+
+
+
 /* 
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
@@ -160,6 +185,7 @@ body {
         font-size: 35pt;
         font-weight: bolder;
     }
+
     #about h4 {
         font-size: 17pt;
     }
@@ -235,6 +261,7 @@ body {
         margin-left: 35px;
         margin-right: 35px;
     }
+
 }
 
 
@@ -333,5 +360,9 @@ body {
     .mobil-font h4 {
         font-size: large;
         padding: 25px;
+    }
+
+    .contact-row .btn-primary {
+        margin-bottom: 14px;
     }
 }
