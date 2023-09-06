@@ -22,6 +22,33 @@ const isMobile = {
     }
 };
 
+function setActive(el) {
+    $('ul li').removeClass('active');
+    $('ul li a').each(function() {
+        if ($(this).attr('href') == el.attr('id')) {
+            $(this).parent().addClass('active');
+        }
+    });
+}
+
+
+//attribution: https://www.jqueryscript.net/demo/detect-when-in-viewport/
+(function ($) {
+    $(window).on("scroll", function () {
+      //Loop Sections
+      $(".section").each(function (i, d) {
+        //And Get Current One
+        var sec = $(this);
+        var el = $(this).find('section');
+        if (
+          $(this).position().top - 100  <= $(document).scrollTop() &&
+          $(this).position().top - 100  + $(this).outerHeight() > $(document).scrollTop()
+        ) {
+            setActive(el);
+        }
+      });
+    });
+  })(jQuery);
 
 $(document).ready(function() {
     if (isMobile.any()) {
@@ -46,21 +73,24 @@ $(document).ready(function() {
 
     //get all the divs with the id of project with jquery
     $('.project').hide();
-    $('.project').eq(index).show()
+    $('.project').eq(index).show();
+
+    $('.experience').hide();
+    $('.experience').eq(index).show();
 
 });
 
-function setIndex(n) {
+function setIndex(n, className) {
     index += n;
     if (index < 0) {
-        index = $('.project').length - 1;
-    }else if(index + 1 > $('.project').length){
+        index = $(className).length - 1;
+    }else if(index + 1 > $(className).length){
         index = 0;
     }
 }
 
-function plusSlides(n) {
-    setIndex(n)
-    $('.project').hide();
-    $('.project').eq(index).show();
+function plusSlides(n, className) {
+    setIndex(n,className)
+    $(className).hide();
+    $(className).eq(index).show();
 }
